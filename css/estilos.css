@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pompiere&display=swap');
+:root{
+    --blueDark: #171D4B;
+    --turquoise: #2ED3C6;
+    --turquoiseDark: #00a196;
+    --whiteDiamond: #F8F5E6;
+    --gris: #607d8b;
+    --grisLight:#b0bec5;
+    --greenMoney: #00d600;
+    --redSwan: #ff0000;
+    --yellow: #fff500;
+}
+
+.fondo{
+    background: linear-gradient(to right, var(--blueDark),var(--turquoiseDark),var(--turquoise), var(--turquoiseDark), var(--blueDark));
+}
+.a-login{
+    color: var(--turquoise);
+}
+.a-login:hover{
+    color: var(--turquoiseDark);
+}
+
+.bg-personalice{
+    background: var(--blueDark);
+}
+
+.titulo{
+    font-family: 'Dancing Script', cursive;
+    font-size: 45px;
+    text-transform: uppercase;
+    background: var(--whiteDiamond);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.input-group-text{
+    background: var(--turquoise);
+    color: var(--whiteDiamond);
+    border-color: var(--turquoiseDark);
+}
+.input-group-eyes{
+    background: white;
+    color: var(--gris);
+    border-top-right-radius: 0.2rem;
+    border-bottom-right-radius: 0.2rem;
+}
+
+.font-lostres{
+    font-family: 'Pompiere', cursive;
+}
+
+.subtitulo{
+    font-size: 30px;
+    background: var(--whiteDiamond);
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.titulo-portada{
+    font-size: 20px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: var(--whiteDiamond);
+    transition: 0.1s;
+}
+.titulo-portada:hover{
+    transform: scale(1.2);
+    color: var(--whiteDiamond);
+}
+
+.img-icono{
+    transition: 0.1s;
+}
+
+.img-icono:hover{
+    transform: scale(1.2);
+}
+
+.fondo-nav{
+    background: var(--blueDark);
+}
+
+.font-nav{
+    color: var(--whiteDiamond);
+}
+
+ul li .font-nav{
+    border-radius: 0.2rem;
+    transition: 0.1s;
+}
+
+ul li .font-nav:hover{
+    background: #444477;
+    color: white;
+}
+
+.cards{
+    min-height: 150px;
+    max-width: 500px;
+    border-radius: 0.5rem;
+}
+
+.card-usuario{
+    background: var(--gris);
+    color: white;
+}
+
+.card-money{
+    background: var(--greenMoney);
+    color: black;
+}
+
+.card-bodega{
+    background: var(--redSwan);
+    color: white
+}
+
+.card-proveedor{
+    background: var(--yellow);
+    color: black;
+}
+
+.card-productos{
+    background: var(--turquoise);
+    color: black;
+}
+
+.f-ver{
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1%;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    transition: 0.3s;
+}
+
+.f-bodega{
+    background: #c20000;
+}
+
+.f-money{
+    background: #00a300;
+}
+
+.font-black{
+    color: black;
+}
+
+.f-usuario{
+    background: #34515e;
+}
+
+.f-proveedor{
+    background: #c7c300;
+}
+
+.f-productos{
+    background: var(--turquoiseDark);
+}
+
+.img-usuario{
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 0.5rem;
+}
+
+.cards:hover{
+    transform: scale(1.02);
+}
+
+.cards:hover .f-ver{
+    transform: translateY(-10px);
+    
+}
+.cards:hover .f-ver i{
+    transform: rotate(180deg);
+    transition: 0.5s;
+}
+  
+.info{
+    background: var(--grisLight);
+}
+.vence{
+    background: #c1d1d8;
+}
+.vence-producto{
+    display: flex;
+    justify-content: center;
+}
