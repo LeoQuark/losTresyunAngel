@@ -35,7 +35,6 @@
     -webkit-text-fill-color: transparent;
 }
 
-
 .input-group-text{
     background: var(--turquoise);
     color: var(--whiteDiamond);
@@ -58,6 +57,12 @@
     text-transform: uppercase;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+/*ESTILOS PARA PORTADA */
+
+.body-portada{
+    background: url('../img/doodles.png');
 }
 
 .titulo-portada{
@@ -102,6 +107,7 @@ ul li .font-nav:hover{
     min-height: 150px;
     max-width: 500px;
     border-radius: 0.5rem;
+    /* box-shadow: 5px 2px 8px 5px #bdbdbd; */
 }
 
 .card-usuario{
