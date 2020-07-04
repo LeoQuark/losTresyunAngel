@@ -1,0 +1,64 @@
+/*------- SECCION DE /USUARIO ---------*/
+.bg-user{
+    background: #e0e0e0;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #aeaeae;
+}
+.img-usuarios{
+    max-width: 55%;
+    max-height: 55%;
+    border-radius: 0.5rem;
+    border-style: solid;
+    border-width: 1px;
+    border-color:#aeaeae;
+}
+
+.line-effects::after, .line-effects::before{
+    content: '';
+    position: absolute;
+    background-color: currentColor;
+    border-radius: 0.5rem;
+    width: 120px;
+    height: 3px;
+    top:1.5rem;
+    transform: scale(0);
+    transition: all 0.2s ease-in;
+}
+.line-effects:hover::before , .line-effects:hover::after{
+    transform: scale(1);
+}
+.line-effects::before{
+    left: 100px;
+}
+.line-effects::after{
+    right:100px;
+}
+
+.datosPersonales tr p{
+    margin: 2px 2px;
+    transition: 0.2s;
+}
+.datosPersonales tr:hover{
+    background: #b0bec5;
+}
+.datosPersonales tr td:nth-child(1){
+    padding-right: 150px;
+}
+.datosPersonales tr td:nth-child(2){
+    width: 60%;
+}
+
+/*------ SECCION DE /PROVEEDORES ------*/
+.showProveedor{
+    display: none;
+}
+
+/*------ SECCION DE /BODEGA --------*/
+.mostrarBodega{
+    display: none;
+}
+
+.formInventario tr:hover{
+    background: #b0bec5;   
+}
