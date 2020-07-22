@@ -13,28 +13,6 @@
     border-width: 1px;
     border-color:#aeaeae;
 }
-
-.line-effects::after, .line-effects::before{
-    content: '';
-    position: absolute;
-    background-color: currentColor;
-    border-radius: 0.5rem;
-    width: 120px;
-    height: 3px;
-    top:1.5rem;
-    transform: scale(0);
-    transition: all 0.2s ease-in;
-}
-.line-effects:hover::before , .line-effects:hover::after{
-    transform: scale(1);
-}
-.line-effects::before{
-    left: 100px;
-}
-.line-effects::after{
-    right:100px;
-}
-
 .datosPersonales tr p{
     margin: 2px 2px;
     transition: 0.2s;
@@ -61,4 +39,29 @@
 
 .formInventario tr:hover{
     background: #b0bec5;   
+}
+
+/*------ SECCION DE /VENTAS -------*/
+#showCardOn{
+    transition: 0.3s;
+}
+#showCardOn:hover{
+    transform: scale(1.02);
+}
+
+#showCardOff{
+    transition: 0.3s;
+}
+#showCardOff:hover{
+    transform: scale(1.02);
+}
+
+.realizarVenta{
+    display: none;
+}
+.verVentas{
+    display: none;
+}
+#tablaVentas tr:hover , #tablaVerVentas tr:hover{
+    background: #cfd8dc;
 }

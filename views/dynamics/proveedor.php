@@ -1,55 +1,6 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <script src="https://kit.fontawesome.com/b097035380.js" crossorigin="anonymous"></script>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/estilos.css" >
-    <link rel="stylesheet" href="../css/secciones.css">
-
-    <title>Tres y un Ángel</title>
-  </head>
-  <body class="body-portada">
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top fondo-nav">
-        <div class="container">
-            <div class="row">
-                <a href="portada.html"><img src="../img/icono.png" class="img-icono" alt="descripcion" width="35" height="40"></a>
-                <a href="portada.html" class="navbar-brand mx-3 pt-2 font-lostres titulo-portada">los tres y un ángel</a>
-            </div>
-            <button class="navbar-toggler border border-light shadow-sm" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Menu">
-                <span class="material-icons text-white"><em class="fas fa-bars text-white"></em></span>
-              </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbar">
-                <div class="row">
-                    <ul class="navbar-nav pr-3">
-                        <li class="nav-item">
-                            <a href="portada.html" class="nav-link mx-2 font-nav">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="ventas.html" class="nav-link mx-2 font-nav">Ventas</a>
-                        </li>
-                        <li class="nav-item" >
-                            <a href="productos.html" class="nav-link mx-2 font-nav">Productos</a>
-                        </li>
-                        <li class="nav-item" >
-                            <a href="proveedor.html" class="nav-link mx-2 font-nav">Proveedor</a>
-                        </li>
-                        <li class="nav-item" >
-                            <a href="bodega.html" class="nav-link mx-2 font-nav">Bodega</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav><br>
-    <br>
-    <br>
-
-    <!-- UBICACION DE PAGINA -->
+<?php include('../static/header.php');
+?>
+<!-- UBICACION DE PAGINA -->
     <div class="container">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb py-1 my-1">
@@ -61,12 +12,12 @@
 
     <!-- CONTENIDO  -->
     <div class="container">
-        <div class="row">
+        <div class="row pt-4">
             <div class="col">
                 <div class="card-columns">
                     <!-- CARD PARA LOS PROVEEDORES -->
                     <div class="card rounded shadow">
-                        <img src="../img/market1.jpg" alt="" class="card-img-top" style="max-height: 170px;">
+                        <img src="../../img/market1.jpg" alt="" class="card-img-top" style="max-height: 170px;">
                         <div class="card-body pt-2 pb-0">
                             <h3 class="font-weight-bold my-1">Proveedor 1</h3>
                             <small>Rut proveedor: 27.566.989-5</small>
@@ -82,7 +33,7 @@
                         </div>
                     </div>
                     <div class="card rounded shadow">
-                        <img src="../img/market2.jpg" alt="" class="card-img-top" style="max-height: 170px;">
+                        <img src="../../img/market2.jpg" alt="" class="card-img-top" style="max-height: 170px;">
                         <div class="card-body pt-2 pb-0">
                             <h3 class="font-weight-bold my-1">Proveedor 2</h3>
                             <small>Rut proveedor: 27.566.989-5</small>
@@ -98,7 +49,7 @@
                         </div>
                     </div>
                     <div class="card rounded shadow">
-                        <img src="../img/market3.jpg" alt="" class="card-img-top" style="max-height: 170px;">
+                        <img src="../../img/market3.jpg" alt="" class="card-img-top" style="max-height: 170px;">
                         <div class="card-body pt-2 pb-0">
                             <h3 class="font-weight-bold my-1">Proveedor 3</h3>
                             <small>Rut proveedor: 27.566.989-5</small>
@@ -160,21 +111,4 @@
         </div>
     </div>
     <br><br>
-    <!-- FOOTER -->
-    <footer class="fondo-nav fixed-bottom">
-        <div class="container">
-            <div class="row d-flex justify-content-center pt-1 text-light">
-                Copyright <i class="far fa-copyright text-light pt-1 mx-2"></i>
-                UTEM | Ing. Civil Computación menc. Informática
-            </div>
-        </div>
-    </footer>
-
-    <!-- Optional JavaScript -->
-    <script src="../js/proveedor.js"></script>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="../js/jquery-3.5.1.slim.min.js"></script>
-    <script src="../js/popper.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-  </body>
-</html>
+<?php include('../static/footer.php') ?>
