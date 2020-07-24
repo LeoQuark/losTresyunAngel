@@ -23,7 +23,7 @@
             <div class="row">
                 <a href="#"><img src="../../img/icono.png" class="img-icono" alt="descripcion" width="35"
                         height="40"></a>
-                <a href="#" class="navbar-brand mx-3 pt-2 font-lostres titulo-portada">los tres y un
+                <a href="../dynamics/inicio.php" class="navbar-brand mx-3 pt-2 font-lostres titulo-portada">los tres y un
                     ángel</a>
             </div>
             <button class="navbar-toggler border border-light shadow-sm" type="button" data-toggle="collapse"

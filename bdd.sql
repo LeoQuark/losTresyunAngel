@@ -249,7 +249,7 @@ DROP TABLE IF EXISTS `registro_abastece`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `registro_abastece` (
   `ID_REGISTRO_AB` varchar(30) NOT NULL,
-  `FECHA_CADUCIDAD` datetime NOT NULL,
+  `FECHA_CADUCIDAD` date NOT NULL,
   `CANTIDAD` int NOT NULL,
   `PRECIO` int NOT NULL,
   `ID_ABASTECE` varchar(30) NOT NULL,

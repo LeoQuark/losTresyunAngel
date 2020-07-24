@@ -7,7 +7,6 @@
             </div>
         </div>
     </footer>
-    <!-- VueJS -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <!-- Optional JavaScript -->
     <script src="../../js/estadisticas.js"></script>

@@ -3,7 +3,7 @@
     <div class="container">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb py-1 my-1">
-                <li class="breadcrumb-item"><a href="../dynamics/inicio.php">Panel de Control</a></li>
+                <li class="breadcrumb-item"><a href="inicio.php">Panel de Control</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Usuario</li>
             </ol>
         </nav>

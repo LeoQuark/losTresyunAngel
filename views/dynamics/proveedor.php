@@ -1,10 +1,16 @@
 <?php include('../static/header.php');
+    include_once '../conection/conexionBD.php';
+
+    $proveedor_sql = 'SELECT * FROM proveedor';
+    $conexion = $mybd -> prepare($proveedor_sql);
+    $conexion->execute();
+    $proveedores = $conexion->fetchAll();
 ?>
 <!-- UBICACION DE PAGINA -->
     <div class="container">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb py-1 my-1">
-              <li class="breadcrumb-item"><a href="portada.html">Panel de Control</a></li>
+              <li class="breadcrumb-item"><a href="inicio.php">Panel de Control</a></li>
               <li class="breadcrumb-item active" aria-current="page">Proveedor</li>
             </ol>
           </nav>
@@ -16,54 +22,38 @@
             <div class="col">
                 <div class="card-columns">
                     <!-- CARD PARA LOS PROVEEDORES -->
+                    <?php foreach($proveedores as $proveedor): ?>
                     <div class="card rounded shadow">
                         <img src="../../img/market1.jpg" alt="" class="card-img-top" style="max-height: 170px;">
                         <div class="card-body pt-2 pb-0">
-                            <h3 class="font-weight-bold my-1">Proveedor 1</h3>
-                            <small>Rut proveedor: 27.566.989-5</small>
+                            <h3 class="font-weight-bold my-1"><?php echo $proveedor['NOMBRE'] ?></h3>
+                            <small>Rut Empresa <?php echo $proveedor['RUT']?></small>
                             <hr>
-                            <p class="my-1">Nombre</p>
-                            <p class="my-1">Dirección</p>
-                            <p class="my-1">proveedor@gmail.com</p>
-                            <p class="my-1">Teléfono: </p>
-                            <hr>
-                            <div class="d-flex justify-content-center">
-                                <p class="text-muted"><small>Proveedor Oficial de Los Tres y un Ángel</small></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card rounded shadow">
-                        <img src="../../img/market2.jpg" alt="" class="card-img-top" style="max-height: 170px;">
-                        <div class="card-body pt-2 pb-0">
-                            <h3 class="font-weight-bold my-1">Proveedor 2</h3>
-                            <small>Rut proveedor: 27.566.989-5</small>
-                            <hr>
-                            <p class="my-1">Nombre</p>
-                            <p class="my-1">Dirección</p>
-                            <p class="my-1">proveedor@gmail.com</p>
-                            <p class="my-1">Teléfono: </p>
+                            <table class="table table-borderless table-sm tableProveedor">
+                                <tr>
+                                    <th scope="row">Contacto :</th>
+                                    <td> <?php echo $proveedor['NOMBRE_CONTACTO'] ?> </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Direccion :</th>
+                                    <td> <?php echo $proveedor['DIRECCION'] ?> </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">E-mail :</th>
+                                    <td> <?php echo $proveedor['CORREO'] ?> </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Teléfono :</th>
+                                    <td> <?php echo $proveedor['TELEFONO'] ?> </td>
+                                </tr>
+                            </table>
                             <hr>
                             <div class="d-flex justify-content-center">
                                 <p class="text-muted"><small>Proveedor Oficial de Los Tres y un Ángel</small></p>
                             </div>
                         </div>
                     </div>
-                    <div class="card rounded shadow">
-                        <img src="../../img/market3.jpg" alt="" class="card-img-top" style="max-height: 170px;">
-                        <div class="card-body pt-2 pb-0">
-                            <h3 class="font-weight-bold my-1">Proveedor 3</h3>
-                            <small>Rut proveedor: 27.566.989-5</small>
-                            <hr>
-                            <p class="my-1">Nombre</p>
-                            <p class="my-1">Dirección</p>
-                            <p class="my-1">proveedor@gmail.com</p>
-                            <p class="my-1">Teléfono: </p>
-                            <hr>
-                            <div class="d-flex justify-content-center">
-                                <p class="text-muted"><small>Proveedor Oficial de Los Tres y un Ángel</small></p>
-                            </div>
-                        </div>
-                    </div>
+                    <?php endforeach ?>
                 </div>
             </div>
         </div>

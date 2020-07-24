@@ -166,5 +166,6 @@
             </div>
         </div>
     </div>
+    <br><br>
 
 <?php include('../static/footer.php') ?>

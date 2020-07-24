@@ -31,14 +31,27 @@
 .showProveedor{
     display: none;
 }
+.tableProveedor tr th{
+    font-size: 12px;
+    padding-top: 8px;
+}
+.tableProveedor tr:hover{
+    background: #b0bec5;
+}
 
 /*------ SECCION DE /BODEGA --------*/
-.mostrarBodega{
+/* .mostrarBodega{
     display: none;
 }
 
 .formInventario tr:hover{
     background: #b0bec5;   
+} */
+.alert-error{
+    display: none;
+}
+.alert-exito{
+    display: none;
 }
 
 /*------ SECCION DE /VENTAS -------*/
@@ -63,5 +76,10 @@
     display: none;
 }
 #tablaVentas tr:hover , #tablaVerVentas tr:hover{
+    background: #cfd8dc;
+}
+
+/* PRODUCTOS */
+.tableProductos tr:hover{
     background: #cfd8dc;
 }
