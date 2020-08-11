@@ -1,0 +1,85 @@
+/*------- SECCION DE /USUARIO ---------*/
+.bg-user{
+    background: #e0e0e0;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #aeaeae;
+}
+.img-usuarios{
+    max-width: 55%;
+    max-height: 55%;
+    border-radius: 0.5rem;
+    border-style: solid;
+    border-width: 1px;
+    border-color:#aeaeae;
+}
+.datosPersonales tr p{
+    margin: 2px 2px;
+    transition: 0.2s;
+}
+.datosPersonales tr:hover{
+    background: #b0bec5;
+}
+.datosPersonales tr td:nth-child(1){
+    padding-right: 150px;
+}
+.datosPersonales tr td:nth-child(2){
+    width: 60%;
+}
+
+/*------ SECCION DE /PROVEEDORES ------*/
+.showProveedor{
+    display: none;
+}
+.tableProveedor tr th{
+    font-size: 12px;
+    padding-top: 8px;
+}
+.tableProveedor tr:hover{
+    background: #b0bec5;
+}
+
+/*------ SECCION DE /BODEGA --------*/
+/* .mostrarBodega{
+    display: none;
+}
+
+.formInventario tr:hover{
+    background: #b0bec5;   
+} */
+.alert-error{
+    display: none;
+}
+.alert-exito{
+    display: none;
+}
+
+/*------ SECCION DE /VENTAS -------*/
+#showCardOn{
+    transition: 0.3s;
+}
+#showCardOn:hover{
+    transform: scale(1.02);
+}
+
+#showCardOff{
+    transition: 0.3s;
+}
+#showCardOff:hover{
+    transform: scale(1.02);
+}
+
+.realizarVenta{
+    display: none;
+}
+.verVentas{
+    display: none;
+}
+#tablaVentas tr:hover , #tablaVerVentas tr:hover{
+    background: #cfd8dc;
+}
+
+/* PRODUCTOS */
+.tableProductos tr:hover{
+    background: #cfd8dc;
+}
