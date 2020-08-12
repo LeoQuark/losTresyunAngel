@@ -13,21 +13,10 @@
     border-width: 1px;
     border-color:#aeaeae;
 }
-.datosPersonales tr p{
-    margin: 2px 2px;
-    transition: 0.2s;
-}
-.datosPersonales tr:hover{
-    background: #b0bec5;
-}
-.datosPersonales tr td:nth-child(1){
-    padding-right: 150px;
-}
-.datosPersonales tr td:nth-child(2){
-    width: 60%;
-}
+
 
 /*------ SECCION DE /PROVEEDORES ------*/
+
 .showProveedor{
     display: none;
 }
@@ -38,6 +27,8 @@
 .tableProveedor tr:hover{
     background: #b0bec5;
 }
+
+
 
 /*------ SECCION DE /BODEGA --------*/
 /* .mostrarBodega{

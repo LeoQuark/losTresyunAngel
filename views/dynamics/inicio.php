@@ -3,7 +3,7 @@
 include_once '../conection/conexionBD.php';
 
 // QUERY PARA MOSTRAR LOS DATOS DE USUARIO EN EL CARD DE USUARIOS
-$rutUsuario = "19695283-4";
+$rutUsuario = "19844422-7";
 $datosUsuario = 'SELECT e.NOMBRE as NOMBRE, c.ID_CARGO as ID, c.descripcion as DESCRIPCION FROM empleado e JOIN cargo c on e.ID_CARGO = c.ID_CARGO WHERE e.rut=(?)';
 $conexion = $mybd->prepare($datosUsuario);
 $conexion->execute(array($rutUsuario));
