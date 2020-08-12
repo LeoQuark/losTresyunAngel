@@ -17,11 +17,6 @@
     <script src="../../js/jquery-3.5.1.slim.min.js"></script>
     <script src="../../js/popper.min.js"></script>
     <script src="../../js/bootstrap.min.js"></script>
-<<<<<<< HEAD
     </body>
 
     </html>
-=======
-</body>
-</html>
->>>>>>> 159db6d251105f8e303277be7bf0ee051d85e106

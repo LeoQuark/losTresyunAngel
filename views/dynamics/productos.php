@@ -5,10 +5,7 @@
     $conexion = $mybd -> prepare($productos_sql);
     $conexion->execute();
     $productos = $conexion->fetchAll();
-<<<<<<< HEAD
     // print_r($productos);
-=======
->>>>>>> 159db6d251105f8e303277be7bf0ee051d85e106
 ?>
 <!-- CONTENIDO -->
     <div class="container my-2">
@@ -18,7 +15,6 @@
                 <li class="breadcrumb-item active" aria-current="page">Productos</li>
             </ol>
         </nav>
-<<<<<<< HEAD
     </div>
     <div class="container bg-light rounded shadow">
         <div class="row">
@@ -87,32 +83,6 @@
                         <?php endforeach ?>
                     </table>
                 </div>
-=======
-        <div class="row my-3 bg-light rounded shadow">
-            <div class="col-12">
-                <h3 class="text-center font-weight-bold my-3 text-uppercase">Productos</h3>
-                <hr>
-                <table class="table table-borderless tableProductos">
-                    <thead class="thead-dark">
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">ID</th>
-                            <th scope="col">NOMBRE</th>
-                            <th scope="col">PRECIO</th>
-                        </tr>
-                    </thead>
-                    <?php 
-                    $num=1;
-                    foreach($productos as $producto): ?>
-                    <tr>
-                        <th scope="row"><?php echo $num++ ?></th>
-                        <td><?php echo $producto['ID_PRODUCTO_FI'] ?></td>
-                        <td><?php echo $producto['NOMBRE']?></td>
-                        <td><?php echo "$" . $producto['PRECIO'] ?></td>
-                    </tr>
-                    <?php endforeach ?>
-                </table>
->>>>>>> 159db6d251105f8e303277be7bf0ee051d85e106
             </div>
         </div>
     </div>
